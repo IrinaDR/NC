@@ -1,0 +1,13 @@
+# IDEA files
+.idea
+NC.iml
+
+# MVN
+/.mvn
+mvnw*
+
+# ExtJS
+client/ext
+
+# Other
+target
