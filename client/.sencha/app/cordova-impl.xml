@@ -22,7 +22,7 @@
 
     <target name="cordova-help"/>
 
-    <!-- Create Cordova Application-->
+    <!-- Create Cordova TestApplication-->
     <target name="cordova-create" depends="cordova-init">
         <if>
             <not>

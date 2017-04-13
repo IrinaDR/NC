@@ -2,10 +2,6 @@
 .idea
 NC.iml
 
-# MVN
-/.mvn
-mvnw*
-
 # ExtJS
 client/ext
 

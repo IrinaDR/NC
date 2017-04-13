@@ -405,7 +405,7 @@
      *              "path": "${app.output.resources}/images",
      *              "enable": false
      *          },
-     *          // Setting the "enable" property of this object to a Truthy value will cause a Application Cache
+     *          // Setting the "enable" property of this object to a Truthy value will cause a TestApplication Cache
      *          // manifest file to be generated based on this files appCache object. This file will then be injected
      *          // into the index.html file of the built application
      *          "appCache":{

@@ -309,7 +309,7 @@ Ext.Boot.loadSync([
             <if>
                 <available file="${theme.images.dir}"/>
                 <then>
-                    <echo>Copying user defined images from @{theme}/images to ${tmp.img.dir}</echo>
+                    <echo>Copying customer defined images from @{theme}/images to ${tmp.img.dir}</echo>
                     <copy todir="${tmp.img.dir}">
                         <fileset dir="${theme.images.dir}" includes="**/*"/>
                     </copy>

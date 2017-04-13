@@ -16,7 +16,7 @@
             </then>
         </if>
 
-        <!--Check for verbose output config from the user-->
+        <!--Check for verbose output config from the customer-->
         <if>
             <x-is-true value="app.phonegap.config.verbose"/>
             <then>
@@ -34,7 +34,7 @@
     <!--Default target outputs help information-->
     <target name="phonegap-help"/>
 
-    <!-- Create Phonegap Application-->
+    <!-- Create Phonegap TestApplication-->
     <target name="phonegap-create" depends="phonegap-init">
         <if>
             <not>

@@ -22,7 +22,7 @@
     <!--
     Run "sencha which" again, similar to the above target, but explicitly check
     for the 'SENCHA_CMD' environment variable to have been set, in case sencha 
-    cmd isn't on the current path settings for the user
+    cmd isn't on the current path settings for the customer
     -->
     <target name="find-cmd-in-environment" unless="cmd.dir">
         <exec executable="${env.SENCHA_CMD}/sencha" 
@@ -40,7 +40,7 @@
     <!--
     == Mac OSX launchd fix ==
     create a child shell process that will source in ~/.bash_profile
-    and then attempt to call 'sencha which' with the current user's 
+    and then attempt to call 'sencha which' with the current customer's
     shell profile settings.  sencha which will create a properties file
     that can then be loaded into this (the parent) process.
     

@@ -68,13 +68,13 @@
         </tstamp>
 
         <x-load-properties>
-            <!-- If available, load user-defined properties for this build identifier -->
+            <!-- If available, load customer-defined properties for this build identifier -->
             <file path="${app.config.dir}/${build.id}.properties" required="false"/>
             <file path="${app.config.dir}/${app.locale}.properties" required="false"/>
             <file path="${app.config.dir}/${app.theme}.properties" required="false"/>
             <file path="${app.config.dir}/${build.name}.properties" required="false"/>
             <file path="${app.config.dir}/multi-build.properties" required="false"/>
-            <!-- Load user-defined properties for environment then general: -->
+            <!-- Load customer-defined properties for environment then general: -->
             <file path="${app.config.dir}/${build.environment}.properties" required="false"/>
             <file path="${app.config.dir}/build.properties" required="false"/>
             <!-- Pick up the defaults by framework/environment followed by general: -->
