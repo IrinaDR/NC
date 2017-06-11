@@ -1,16 +1,20 @@
 package ru.ncedu.purchasebot.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Customer {
 
     @Id
+    @ManyToOne
+    @Column(length = 15)
     private String login;
+    @Column(nullable = false, length = 8)
     private String password;
+    @Column(nullable = false, length = 40)
     private String email;
     private double account;
+
 
     public Customer() {}
 
