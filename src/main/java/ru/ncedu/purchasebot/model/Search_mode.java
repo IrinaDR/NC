@@ -3,12 +3,10 @@ package ru.ncedu.purchasebot.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Entity
 public class Search_mode {
     @Id
-    @ManyToOne
     private long search_mode_id;
     @Column(nullable = false)
     private String value;

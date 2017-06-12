@@ -6,8 +6,7 @@ import javax.persistence.*;
 public class Customer {
 
     @Id
-    @ManyToOne
-    @Column(length = 15)
+    @Column( length = 15)
     private String login;
     @Column(nullable = false, length = 8)
     private String password;

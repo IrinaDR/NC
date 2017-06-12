@@ -1,5 +1,7 @@
 package ru.ncedu.purchasebot.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -9,6 +11,8 @@ import java.util.List;
 public class Bot {
 
     @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment" , strategy = "increment")
     private long bot_id;
     @OneToMany(mappedBy = "login")
     private List<Customer> user;
